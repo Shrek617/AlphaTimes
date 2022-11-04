@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlphaTimes - Лучший сервер в Minecraft Slip!</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/Minecraft.css?family=Minecraft&display=swap">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$(function()
+		{
+			var splashes =
+			[
+				"Лучший майнкрафт сервер!",
+				"Сервер создан Блинчиком!",
+				"AlphaTimes - лучший сервер!",
+			];
+
+			var splash = splashes[Math.floor(Math.random() * splashes.length)];
+			$("#splashtext").html(splash);
+		});
+	</script>
+  </head>
+  <body>
+    <div id="id-4">
+	  <div id="id-3">
+	    <img src="images/minecraft.png" style="margin-top: -30px; width:1000px; height:180px;">
+		  <div class="tilt">
+		    <div id="splashtext" class="pop"></div>
+		  </div>
+	  </div>
+	</div>
+
+	<div id="id-1">
+	  Minecraft Slip v1.0.2
+	</div>
+	<div id="id-2">
+	  Copyright Mojang Specifications. Do not distribute.
+	</div>
+	<div id="id-2" style="padding-bottom: 20px;">
+	  Website made by Shrek617. Splashes made by OSM.
+	</div>
+	<div id="id-2" style="padding-bottom: 40px;">
+	  Minecraft Slip made by Dudnak.
+	</div>
+	<div id="button" style="padding-top: 55px;">
+	  <center><button>Одиночная игра</button></center>
+	</div>
+	<div id="button" onclick="location.href = './multiplayermenu.html';" style="padding-top: 6px;">
+	  <center><button><span id="alphatimestext1">Зайти на</span><span id="alphatimestext2"> AlphaTimes</span></button></center>
+	</div>
+	<div id="button" style="padding-top: 6px;">
+	  <center><button>Моды и текстурпаки</button></center>
+	</div>
+	<div id="button" style="padding-top: 30px;">
+	  <center><button>Настройки</button></center>
+	</div>
+  </body>
+</html>

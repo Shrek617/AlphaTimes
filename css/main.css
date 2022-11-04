@@ -1,0 +1,64 @@
+@font-face
+{
+	font-family: Minecraft;
+	src: url('../fonts/Minecraft.ttf');
+}
+
+* {
+	color: white;
+	text-shadow:2px 2px #3F3F3F;
+	font-family: 'Minecraft';
+	font-size: 100%;
+}
+
+#id-1 {
+	position: fixed;
+	left: 0; top: 0;
+	font-size: 100%;
+	color: #00AA00;
+	text-shadow: 2px 2px #002A00;
+}
+
+#id-2 {
+	position: fixed;
+	right: 0; bottom: 0;
+	font-size: 100%;
+}
+
+
+#id-3 {
+	display: inline-block;
+}
+
+#id-4 {
+	text-align: center;
+	position: relative;
+    text-align: center;
+}
+
+button {
+	background: url(../images/buttons/gui2.png);
+	border: 0;
+	width: 400px;
+	height:40px;
+}
+
+button:hover {
+	background: url(../images/buttons/gui3.png);
+	color: #FFE766;
+	text-shadow: 2px 2px #3F3F15;
+}
+
+#alphatimestext1 {
+	color: #FFAA00;
+	text-shadow: 2px 2px #2A2A00;
+}
+
+#alphatimestext2 {
+	color: #00AA00;
+	text-shadow: 2px 2px #002A00;
+}
+
+body {
+    background: url(../images/bg.gif);
+}
