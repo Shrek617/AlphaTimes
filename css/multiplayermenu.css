@@ -12,7 +12,7 @@
 }
 
 #id-1 {
-    padding-top: 30px;
+        padding-top: 30px;
 }
 
 #id-2 {
@@ -38,6 +38,11 @@ button {
 	height:40px;
 }
 
+#button {
+	width: 400px;
+	margin: 0 auto;	
+}
+
 button:hover {
 	background: url(../images/buttons/gui3.png);
 	color: #FFE766;
@@ -45,7 +50,7 @@ button:hover {
 }
 
 body {
-    background: url(../images/bg.gif);
+        background: url(../images/bg.gif);
 }
 
 #navbar1text {
