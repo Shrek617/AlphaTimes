@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphaTimes - Лучший сервер в Minecraft Slip!</title>
+    <title>AlphaTimes - Лучший сервер в Minecraft Acid!</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/Minecraft.css?family=Minecraft&display=swap">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -15,8 +16,12 @@
 				"Лучший майнкрафт сервер!",
 				"Сервер создан Блинчиком!",
 				"AlphaTimes - лучший сервер!",
-				"1.0.3 - классика навсегда!",
-				"1.0.3 - classic forever!",
+				"Acid - что-то новенькое!",
+				"Acid - hm, yes, what's new!",
+				"Ура, Система скинов Acid!",
+				"Yeah, Skin System Acid!",
+				"Как дела, странник?",
+				"Minecraft Acid 1.0.0!"
 			];
 
 			var splash = splashes[Math.floor(Math.random() * splashes.length)];
@@ -27,7 +32,39 @@
   <body>
     <div id="id-4">
 	  <div id="id-3">
-	    <img src="images/Minecraft.png" style="margin-top: -30px; width:1000px; height:180px;">
+		  <script>
+			var div = document.getElementById("id-3");
+			var canvas = document.createElement('canvas');
+			canvas.marginTop = -30;
+			canvas.width = 1000;
+			canvas.height = 180;
+			div.appendChild(canvas);
+
+			var ctx = canvas.getContext('2d');
+
+			var images = [];
+			var loadedImages = 0;
+			var numImages = 12;
+
+			for (var i = 0; i < numImages; i++) {
+			  images[i] = new Image();
+			  images[i].onload = function() {
+				if (++loadedImages >= numImages) {
+				  var frameIndex = 0;
+				  var intervalId = setInterval(function() {
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+					ctx.drawImage(images[frameIndex], 0, 0, canvas.width, canvas.height);
+					frameIndex++;
+					if (frameIndex >= numImages) {
+					  clearInterval(intervalId);
+					  frameIndex = numImages - 1;
+					}
+				  }, 75);
+				}
+			  };
+			  images[i].src = './images/animation/image' + (i + 1) + '.png';
+			}
+		  </script>
 		  <div class="tilt">
 		    <div id="splashtext" class="pop"></div>
 		  </div>
@@ -35,7 +72,7 @@
 	</div>
 
 	<div id="id-1">
-	  Minecraft Slip v1.0.3
+	  Minecraft Acid v1.0.0
 	</div>
 	<div id="id-2">
 	  Copyright Mojang Specifications. Do not distribute.
@@ -44,7 +81,7 @@
 	  Website made by Shrek617. Splashes made by OSM.
 	</div>
 	<div id="id-2" style="padding-bottom: 40px;">
-	  Minecraft Slip made by Dudnak.
+	  Minecraft Acid made by Blin4ik91.
 	</div>
 	<div id="button" onclick="location.href = './singleplayer';" style="padding-top: 55px;">
 	  <button>Одиночная игра</button>

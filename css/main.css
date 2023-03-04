@@ -66,5 +66,8 @@ button:hover {
 }
 
 body {
-    background: url(../images/bg.gif);
+	background-image: url("../images/bg.png");
+	background-size: 50px;
+	background-color: #404040;
+	background-blend-mode: multiply;
 }
