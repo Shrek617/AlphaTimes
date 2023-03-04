@@ -32,7 +32,8 @@
 }
 
 button {
-	background: url(../images/buttons/gui2.png);
+	background: url(../images/buttons/gui2.svg);
+	background-size: cover;
 	border: 0;
 	width: 400px;
 	height:40px;
@@ -41,13 +42,25 @@ button {
 #button {
 	width: 400px;
 	height:40px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 button:hover {
-	background: url(../images/buttons/gui3.png);
+	background: url(../images/buttons/gui3.svg);
+	background-size: cover;
 	color: #FFE766;
 	text-shadow: 2px 2px #3F3F15;
+}
+
+button:disabled,
+button[disabled]{
+	color: #AAAAAA;
+	text-shadow: 2px 2px #2A2A2A;
+	background: url(../images/buttons/gui1.svg);
+	background-size: cover;
+	border: 0;
+	width: 400px;
+	height:40px;
 }
 
 body {
